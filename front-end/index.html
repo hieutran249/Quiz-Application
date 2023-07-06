@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- TODO(you): Make whatever changes needed to complete the assignment! -->
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Quiz</title>
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <link href="https://fonts.googleapis.com/css?family=Pangolin:400,700Proxima+Nova" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Linking external CSS and JavaScript file -->
+  <link rel="stylesheet" href="./style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!--
+
+    ******************************************
+    DO NOT TRANSCRIBE THE ARTICLE YOURSELF!!!!
+    ******************************************
+
+    You do not have to type in all of the text on the page!
+
+    The contents of the article is in `index-content.txt`, which is
+    included in this directory. Copy and paste the contents of that file into
+    this HTML file as needed. You should only need to add HTML to markup the
+    content.
+
+  -->
+
+  <header>
+    <!-- HEADER -->
+    <h1 id="course-name">WPR</h1>
+    <div id="stack">
+      <div class="stack-circle">M</div>
+      <div class="stack-circle">E</div>
+      <div class="stack-circle">R</div>
+      <div class="stack-circle">N</div>
+    </div>
+  </header>
+
+  <article>
+    <section id="quiz-name">
+      <h1 class="quiz-name__text">HTML QUIZ</h1>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section id="introduction" class="">
+      <p id="author">By Tran Trung Hieu</p>
+      <h2 class="introduction__title">The Test</h2>
+      <p class="introduction__text">The test contains 10 questions and there is no time limit.</p>
+      <p class="introduction__text">The test is not official,
+        it's just a nice way to see how much you know, or don't know, about HTML.</p>
+      <h2 class="introduction__title">Count Your Score</h2>
+      <p class="introduction__text">You will get 1 point for each correct answer. At the end of the Quiz, your total
+        score will be displayed. Maximum score is 10 points.</p>
+
+      <!-- Start Button -->
+      <section id="box-start" class="box">
+        <h2 class="box__title">Start the quiz</h2>
+        <p class="box__text">Good luck!</p>
+        <button class="btn" id="btn-start">Start the HTML quiz ❯</button>
+      </section>
+    </section>
+
+    <!-- ATTEMP QUIZ -->
+    <section id="attempt-quiz" class="hidden">
+      <!-- Questions -->
+      <div id="question-container">
+
+      </div>
+
+
+      <!-- Submit Button -->
+      <div id="box-submit" class="box">
+        <button class="btn" id="btn-submit">Submit your answers ❯</button>
+      </div>
+
+    </section>
+
+    <section class="modal">
+      <div id="modal-container">
+        <label id="modal-label">Are you sure want to finish this quiz?</label>
+        <div id="modal-btn">
+          <button id="confirm-btn">OK</button>
+          <button id="cancel-btn">Cancel</button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- REVIEW QUIZ -->
+    <section id="review-quiz" class="hidden">
+      <!-- Review questions -->
+      <div id="review-container"></div>
+
+
+      <!-- Try-again Button -->
+      <div id="box-result" class="box">
+        <h2 class="box__title">Result:</h2>
+        <p id="box__score"></p>
+        <p id="box__percent"></p>
+        <p id="box__feedback"></p>
+        <button class="btn" id="btn-try-again">Try again</button>
+      </div>
+    </section>
+  </article>
+</body>
+
+</html>

@@ -1,0 +1,278 @@
+/* TODO(you): Write the CSS to finish the assignment! */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+    font-size: 18px;
+    color: #222222;
+}
+
+body {
+    margin: auto;
+    width: 700px;
+}
+
+/* Header */
+header {
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hidden {
+    display: none;
+}
+
+#course-name {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ee3322;
+}
+
+#stack {
+    float: right;
+}
+
+.stack-circle {
+    background-color: #ffee00;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    transform: rotate(-30deg);
+}
+
+article {}
+
+/* Banner */
+#quiz-name {
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    height: 425px;
+    background-position: center;
+    background-color: #fff;
+    display: flex;
+}
+
+.quiz-name__text {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'Pangolin', 'Trebuchet MS', cursive;
+    font-size: 60px;
+    color: black;
+    padding: 10px;
+    margin: auto;
+}
+
+/* Introduction */
+#introduction {}
+
+#author {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.introduction__title {
+    margin: 32px 0;
+}
+
+.introduction__text {
+    margin-bottom: 18px;
+}
+
+/* Boxes and Buttons */
+.box {
+    background-color: #f1f1f1;
+    border: 1px solid #dcdcdc;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 50px;
+}
+
+.box__title {
+    margin: 32px 0 18px;
+}
+
+#box__percent {
+    font-weight: bold;
+}
+
+#box__percent,
+#box__feedback {
+    margin-top: 18px;
+}
+
+.box__text,
+#box__percent,
+#box__feedback {
+    font-size: 14px;
+}
+
+#box__score {
+    font-size: 24px;
+}
+
+#btn-start,
+#btn-try-again {
+    margin: 32px 0 18px;
+    color: #fff;
+    border-style: none;
+    background-color: #2196F3;
+    padding: 18px;
+}
+
+#btn-start:hover,
+#btn-try-again:hover {
+    background-color: #0d8bf2;
+    cursor: pointer;
+}
+
+#btn-submit {
+    margin: 32px 0 32px;
+    color: #fff;
+    border-style: none;
+    background-color: #4CAF50;
+    padding: 18px;
+}
+
+#btn-submit:hover {
+    background-color: #46a049;
+    cursor: pointer;
+}
+
+/* Attemp quiz */
+#attempt-quiz {}
+
+.question-index {
+    margin: 36px 0;
+}
+
+.question-text {
+    margin-bottom: 30px;
+}
+
+.option {
+    padding: 15px;
+    margin-bottom: 1px;
+    background-color: #f1f1f1;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.option:hover {
+    background-color: #ddd;
+}
+
+input[name^="answer"],
+input[name^="review"] {
+    accent-color: #000;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+
+.option-selected {
+    background-color: #ddd;
+}
+
+/* Review quiz */
+#review-quiz {}
+
+.correct-answer {
+    background-color: #d4edda;
+}
+
+.option-correct {
+    background-color: #ddd;
+}
+
+.wrong-answer {
+    background-color: #f8d7da;
+}
+
+.correct-ans-label,
+.your-ans-label {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
+    z-index: 1;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#modal-container {
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 280px;
+    height: 130px;
+    font-size: 14px;
+    top: 200px;
+}
+
+#modal-label {
+    display: block;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #fff;
+}
+
+#confirm-btn,
+#cancel-btn {
+    height: 24px;
+    width: 78px;
+    margin: 0 4px;
+}
+
+#modal-btn {
+    float: right;
+    margin-top: 12px;
+    margin-right: 44px;
+}
+
+.open {
+    display: flex !important;
+}
+
+/* Resposive */
+
+@media only screen and (max-width: 700px) {
+    body {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #stack {
+        display: none;
+    }
+}
